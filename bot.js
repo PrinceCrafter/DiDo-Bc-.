@@ -21,7 +21,7 @@ client.on("message", message => {
       
                     BroadCast Commands
 BroadCast Help:
-             
+              
 1bc ⇏ خاصية البرودكاست
 1obc ⇏ ارسال برودكسات للونلاين بدون منشن
 1ubc ⇏  ارسال برودكسات بمنشن
