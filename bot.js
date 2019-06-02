@@ -9,7 +9,6 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers ' Script By : PrinceCrafter Codes ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`DiDo Bc .`,"http://twitch.tv/S-F")
  
 });
 
