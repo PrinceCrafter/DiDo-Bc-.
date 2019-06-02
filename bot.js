@@ -9,7 +9,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers ' Script By : PrinceCrafter Codes ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity(`1help `, {type:'WATCHING'});
+    client.user.setActivity(`DiDo Bc.`, {type:'WATCHING'});
 });
 
 client.on("message", message => {
