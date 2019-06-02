@@ -24,7 +24,7 @@ BroadCast Help:
               
 1bc ⇏ خاصية البرودكاست
 1obc ⇏ ارسال برودكسات للونلاين بدون منشن
-1ubc ⇏  ارسال برودكسات بمنشن
+1nbc ⇏ ارسال برودكسات للوفلاين فقط
 `)
    message.channel.sendEmbed(embed)
     
@@ -63,11 +63,11 @@ client.on("message", message => {
 
 client.on("message", message => {
 
-            if (message.content.startsWith(prefix + "ubc")) {
+            if (message.content.startsWith(prefix + "nbc")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
-  message.guild.members.filter(m => m.presence.status !== 'online').forEach(m => {
+  message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
  m.send(`${argresult}\n ${m}`);
 })
  message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` : عدد الاعضاء المستلمين`); 
